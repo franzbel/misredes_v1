@@ -1,0 +1,25 @@
+FORMULARIO DE INICIO DE SESION
+
+<%= form_for @user, url: {action: "create"} do |f| %>
+
+  <%= f.label :name , "Nombre" %> <br>
+  <%= f.text_field :name  %> <br>
+
+  <%= f.label :email, "Email" %><br>
+  <%= f.text_field :email %><br>
+
+  <%= f.label :password, "Password" %><br>
+  <%= f.text_field :password %><br>
+
+  <%= f.label :password_confirmation, "Password confirmation" %><br>
+  <%= f.text_field :password_confirmation %><br>
+
+  <%= f.submit "Crear cuenta" %>
+<% end %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+FORMULARIO DE REGISTRO
